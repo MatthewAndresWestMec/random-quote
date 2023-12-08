@@ -1,3 +1,5 @@
+## Author
+[Matthew A](https://github.com/MatthewAndresWestMec)
 ## How To Run
 In the project directory, you can run: `npm start`
 This will then open a page on localhost:/3000
