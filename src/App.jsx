@@ -16,8 +16,9 @@ const Quote = () => {
   if(quote.length <= max){
     setQuote(quote.content)
     setAuthor(`- ${quote.author}`)
+  }else{
+  Quote()
   }
-   
 }).catch((error) => { console.log(error) })
 }
 
