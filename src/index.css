@@ -13,20 +13,104 @@ code {
 }
 
 h1{
- float:left
+ float:left;
+ font-size: 8vh;
 
 }
 h2{
   float:right;
+  font-size: 6vh;
 }
 
 .box{
   height: 40vh;
-  margin:20% 8vh 0 8vh;
+  margin:15% 8vh 0 8vh;
 }
 
 button{
   background-color: white;
   border: none;
   font-size: 3vh;
+  color:white;
+  background-color: transparent;
+  font-size: 4.5vh;
 }
+
+button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+button:active{
+  transform:rotate(-180deg);
+}
+
+.fade-in-text {
+  animation: fadeIn 3.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+body{
+  background-image: url('../public/image/beautiful_scenery_nature_pier_in_dark_background_hd_dark-1920x1080.jpg');
+  background-repeat: no-repeat, repeat;
+  color:white;
+}
+
+.fog {
+  opacity: 95%;
+  min-width: 2000px;
+  position: relative;
+  animation-name: fog;
+  animation-duration: 8s; 
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear
+  }
+  
+  @keyframes fog {
+      from {right: 0px;}
+      to {right: 50px; }
+    }
+
+    /* body,
+    html {
+      height: 100%;
+    } */
+/*     
+    body {
+      background-color: #000;
+      overflow: hidden;
+      margin: 0;
+    } */
+
+    .quote-box{
+      min-height: 10rem
+    }
+    
+    .container {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom:0px;
+    width: 120%;
+    pointer-events: none;
+    
+    }
+    
+    .fog {
+    opacity: 100%;
+    min-width: 2000px;
+    position: relative;
+    animation-name: fog;
+    animation-duration: 8s; 
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+    }
+    
+    @keyframes fog {
+        from {right: 0px;}
+        to {right: 50px; }
+      }
